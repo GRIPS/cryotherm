@@ -126,6 +126,9 @@ void oneline(const char *str1, const char *str2)
 	outfile = fopen("monitorboard.dat", "a");
 	fprintf(outfile, "%s %s\n", str1, str2);
         fclose(outfile);
+	outfile = fopen("monitorboard-oneline.dat", "w");
+	fprintf(outfile, "%s %s\n", str1, str2);
+        fclose(outfile);
 }
 
 float getT(float volt) /* get temperature from table */
