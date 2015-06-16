@@ -12,7 +12,8 @@ The executable needs root access, so
 
     sudo ./cryotherm
 
-A file called "monitorboard.dat" will be continuously updated with the most recent readings.
+A file called `monitorboard.dat` will be continuously updated with the most recent readings (appended at the end).
+A second file called `monitorboard-oneline.dat` will have only the most recent readings (single line).
 
 Notes
 -----
